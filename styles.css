@@ -2,6 +2,7 @@
    1) THEME / VARIABLES
    ========================================================= */
 :root{
+    color-scheme: light;
   --white-main: #ffffff;
   --white-soft: #fcfdf9;
   --green-main: #3fa65c;
@@ -43,6 +44,7 @@ html{
 html,
 body{
   height: 100%;
+  background: #ffffff;
 }
 
 body{
@@ -684,7 +686,19 @@ img{
   .about-block{
     grid-template-columns: 1fr;
   }
+   
+@media (prefers-color-scheme: dark) {
 
+  body{
+    background: #ffffff;
+    color: #1f2a1f;
+  }
+
+  .section--alt{
+    background: #edf8f0;
+  }
+
+}
   .products-grid{
     grid-template-columns: repeat(2, 1fr);
   }
