@@ -2,71 +2,75 @@
 <html lang="fr">
 <head>
   <!-- ============ BASE ============ -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ============ SEO ============ -->
   <title>Kukigo — Produits naturels à base de banane et autres plantes</title>
-  <meta name="description" content="Kukigo présente les créations naturelles de Marguerite THIAW : produits à base de banane et autres plantes, vendus au Sénégal."/>
+  <meta
+    name="description"
+    content="Kukigo propose des produits naturels à base de banane, patate et autres plantes locales au Sénégal."
+  />
 
-  <!-- ============ PARTAGE (Open Graph) ============ -->
-  <meta property="og:title" content="kukigo — Produits naturels au Sénégal"/>
-  <meta property="og:description" content="Découvrez les produits de Marguerite THIAW : à base de banane et autres plantes. Vente au Sénégal."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://benedictthiaw.github.io/banana-kukigo/"/>
-  <meta property="og:image" content="https://benedictthiaw.github.io/banana-kukigo/images/partages.png"/>
+  <!-- ============ PARTAGE ============ -->
+  <meta property="og:title" content="Kukigo — Produits naturels au Sénégal" />
+  <meta
+    property="og:description"
+    content="Découvrez les produits naturels de Kukigo à base de banane, patate et autres plantes locales."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://benedictthiaw.github.io/banane-kukigo/" />
+  <meta property="og:image" content="https://benedictthiaw.github.io/banane-kukigo/images/partages.png" />
 
-  <!-- ============ PARTAGE (Twitter/X) ============ -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="kukigo — Produits naturels au Sénégal"/>
-  <meta name="twitter:description" content="Produits à base de banane et autres plantes. Vente au Sénégal"/>
-  <meta name="twitter:image" content="https://benedictthiaw.github.io/banana-kukigo/images/partages.png"/>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kukigo — Produits naturels au Sénégal" />
+  <meta
+    name="twitter:description"
+    content="Produits naturels à base de banane et autres plantes locales. Vente au Sénégal."
+  />
+  <meta name="twitter:image" content="https://benedictthiaw.github.io/banane-kukigo/images/partages.png" />
 
   <!-- ============ ASSETS ============ -->
-  <!-- <link rel="stylesheet" href="styles.css" /> -->
-  <link rel="stylesheet" href="styles.css?v=2" />
-  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="icon" href="images/favicon.png" />
 </head>
 
 <body>
-
-  <!-- ============ HEADER (menu) ============ -->
+  <!-- ============ HEADER ============ -->
   <header class="header">
     <div class="container header__inner">
-
-      <!-- Logo / marque -->
       <a class="brand" href="#top" aria-label="Aller à l'accueil">
         <span class="brand__dot" aria-hidden="true"></span>
         <span class="brand__name">Kukigo</span>
       </a>
 
-      <!-- Navigation -->
       <nav class="nav" aria-label="Navigation principale">
-        <a href="#objectif">Objectif</a>
         <a href="#apropos">À propos</a>
         <a href="#produits">Produits</a>
         <a href="#photos">Photos</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Bouton CTA -->
-      <a class="btn btn--primary header__cta" href="#contact">Commander des produits</a>
+      <a class="btn btn--primary header__cta" href="#contact">Commander</a>
     </div>
   </header>
 
   <main id="top">
-
-    <!-- ============ HERO (intro) ============ -->
+    <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="container hero__grid">
-
-        <!-- Texte -->
         <div class="hero__content">
           <p class="badge">Naturel • Transformation locale • Sénégal</p>
-          <h1>Des produits naturels à base de banane et autres plantes locales, créés <span class="accent">par Kukigo</span></h1>
+
+          <h1>
+            Des produits naturels à base de banane et d’autres plantes locales,
+            créés <span class="accent">par Kukigo.</span>
+          </h1>
+
           <p class="lead">
-            Kukigo est une entreprise qui valorise des ingrédients simples (banane et autres plantes) pour créer des produits du quotidien.
-            Nos produits alimentaires sont <strong>sans gluten</strong>.
+            Kukigo valorise des ingrédients simples comme la banane, la patate douce
+            et d’autres plantes locales pour créer des produits du quotidien, naturels
+            et accessibles. Nos produits alimentaires sont <strong>sans gluten</strong>.
           </p>
 
           <div class="hero__actions">
@@ -74,65 +78,190 @@
             <a class="btn btn--ghost" href="#apropos">Découvrir Kukigo</a>
           </div>
 
-          <p class="note">Vente actuelle : <strong>Sénégal</strong>. Produits alimentaires sans gluten.</p>
+          <p class="note">
+            Vente actuelle : <strong>Sénégal</strong> • Produits alimentaires <strong>sans gluten</strong>
+          </p>
         </div>
 
-        <!-- Image -->
         <div class="hero__media">
           <figure class="media media--hero">
-            <img src="images/produit2.png" alt="Produits Kukigo" loading="eager">
+            <img src="images/plantation2.png" alt="Produits Kukigo" loading="eager" />
           </figure>
         </div>
-
       </div>
     </section>
 
-    <!-- ============ OBJECTIF ============ -->
-    <!-- <section id="objectif" class="section">
-      <div class="container">
-        <h2>Objectif du site</h2>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Présenter Kukigo</h3>
-            <p>Mettre en avant l’histoire, la mission et les valeurs : naturel, transformation locale et qualité.</p>
-          </article>
-
-          <article class="card">
-            <h3>Découvrir les produits</h3>
-            <p>Afficher clairement les produits, leurs usages, et comment les obtenir au Sénégal.</p>
-          </article>
-
-          <article class="card">
-            <h3>Contacter facilement</h3>
-            <p>Accès rapide au téléphone et à WhatsApp pour commander ou poser des questions.</p>
-          </article>
-        </div>
-      </div>
-    </section> -->
-
     <!-- ============ A PROPOS ============ -->
     <section id="apropos" class="section section--alt">
-      <div class="container about">
+      <div class="container">
 
-        <!-- Texte -->
-        <div>
-          <h2>À propos de Kukigo</h2>
-          <p>Kukigo (Sénégal) transforme des fruits, légumes et autres plantes comme la banane, la patate pour créer des produits naturels : aliments et produits d’hygiène.</p>
-          <p>L’objectif : proposer des alternatives utiles au quotidien, valoriser le local et offrir des produits accessibles aux familles.</p>
+        <!-- Bloc 1 : À propos -->
+        <div class="about-block">
+          <div class="about-block__media">
+            <figure class="media media--about">
+              <img src="images/atelier2.png" alt="Atelier de transformation Kukigo" loading="lazy" />
+            </figure>
+          </div>
 
-          <ul class="bullets">
-            <li><strong>Vente</strong> : actuellement au Sénégal</li>
-            <li><strong>Sans gluten</strong> : pour les produits alimentaires (selon recette/fabrication)</li>
-            <li><strong>Canal</strong> : autorisation de vente en pharmacie (selon réglementation)</li>
-          </ul>
+          <div class="about-block__content">
+            <h2>À propos de Kukigo</h2>
+
+            <p class="intro-strong">
+              Kukigo — Des produits naturels issus des ressources locales.
+            </p>
+
+            <p>
+              Kukigo est une initiative sénégalaise spécialisée dans la transformation
+              de plantes, fruits et légumes locaux comme la banane et la patate douce,
+              afin de créer des produits naturels pour le quotidien.
+            </p>
+
+            <p>
+              À travers cette démarche, Kukigo valorise les ressources locales et
+              le savoir-faire artisanal pour proposer des produits simples, utiles
+              et accessibles, destinés aussi bien à l’alimentation qu’à l’hygiène.
+            </p>
+
+            <p>
+              Les produits Kukigo sont élaborés avec soin dans le respect des méthodes
+              traditionnelles. Tous les produits alimentaires de Kukigo sont
+              <strong>sans gluten</strong>, permettant de proposer des alternatives
+              naturelles adaptées à une alimentation plus saine.
+            </p>
+          </div>
         </div>
 
-        <!-- Image -->
-        <div class="about__photo">
-          <figure class="media media--portrait">
-            <img src="images/marguerite1.png" alt="Marguerite THIAW" loading="lazy">
-          </figure>
+        <!-- Bloc 2 : Notre histoire (partie 1) -->
+        <div class="about-block about-block--reverse">
+
+          <div class="about-block__content">
+            <h3 class="section-subtitle">Notre histoire</h3>
+
+            <p>
+              Kukigo signifie <em>« mon enfant »</em> en sérère-laalaa.
+              Ce nom reflète l’origine profonde du projet : une initiative née
+              de l’attention portée à une enfant et à son alimentation.
+            </p>
+
+            <p>
+              L’histoire de Kukigo commence en 2002 avec Marguerite THIAW.
+              À cette période, confrontée à des moyens financiers limités,
+              elle cherche une solution simple et naturelle pour nourrir
+              sainement sa fille alors âgée de 6 mois.
+            </p>
+
+            <blockquote class="quote">
+              « Est-ce que je ne pourrais pas éplucher des bananes et les faire sécher pour obtenir de la farine ? »
+            </blockquote>
+
+            <p>
+              C’est à partir de cette idée qu’elle commence à transformer
+              la banane en farine, en l’épluchant puis en la faisant sécher.
+              Elle utilise ensuite cette farine pour préparer des repas
+              qu’elle mélange avec du lait et un peu de sucre.
+            </p>
+
+            <p>
+              Les résultats sont rapidement visibles : sa fille grandit
+              en bonne santé et se développe bien. Encouragée par cette
+              expérience, Marguerite THIAW décide alors de partager
+              son savoir-faire avec les femmes de son village ainsi
+              qu’avec celles des zones productrices de bananes.
+            </p>
+          </div>
+
+          <div class="about-block__media">
+            <figure class="media media--portrait">
+              <img src="images/marguerite1.png"
+                  alt="Marguerite THIAW, fondatrice de Kukigo"
+                  loading="lazy" />
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- Bloc 3 : Notre histoire (partie 2) -->
+        <div class="about-block">
+
+          <div class="about-block__media">
+            <figure class="media media--about">
+              <img src="images/atelier1.png"
+                  alt="Atelier de transformation Kukigo"
+                  loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="about-block__content">
+
+            <p>
+              Au fil du temps, Marguerite THIAW renforce ses compétences
+              dans la transformation des produits locaux et crée une
+              association de femmes productrices de bananes.
+              L’objectif est d’aider les femmes de la région à mieux
+              valoriser cette ressource, au-delà de la simple vente
+              du fruit brut.
+            </p>
+
+            <p>
+              Progressivement, de nouveaux produits voient le jour :
+              farine de banane, couscous de banane, chips de banane,
+              savon de banane et d’autres produits naturels.
+              Ces créations sont notamment présentées à la
+              <strong>Foire de Dakar</strong>, permettant de faire connaître
+              cette initiative à un public plus large.
+            </p>
+
+            <p>
+              Aujourd’hui, Kukigo poursuit cette démarche en valorisant
+              les ressources naturelles locales afin de proposer des
+              produits simples, naturels et accessibles pour le quotidien.
+            </p>
+
+            <ul class="bullets">
+              <li><strong>Pays de vente :</strong> Sénégal</li>
+              <li><strong>Produits alimentaires :</strong> sans gluten</li>
+              <li><strong>Objectif :</strong> valoriser les ressources naturelles locales</li>
+              <li><strong>Distribution :</strong> vente directe et partenaires</li>
+            </ul>
+
+            <!-- Reconnaissance -->
+            <div class="recognition">
+
+              <h4>Reconnaissance</h4>
+
+              <p>
+                L’initiative portée par <strong>Marguerite THIAW</strong>
+                autour de la transformation de la banane et de la
+                valorisation des produits locaux a également été
+                mise en avant par des médias et organisations
+                internationales.
+              </p>
+
+              <div class="recognition__logos">
+
+                <a href="https://www.rfi.fr/fr/afrique/20130816-marguerite-thiaw-farine-banane-senegal"
+                  target="_blank" rel="noopener"
+                  class="recognition__item">
+
+                  <img src="images/logo-rfi.png" alt="Logo RFI">
+                  <span>Interview sur RFI</span>
+
+                </a>
+
+                <a href="https://www.ashoka.org/en-us/fellow/marguerite-thiaw"
+                  target="_blank" rel="noopener"
+                  class="recognition__item">
+
+                  <img src="images/logo-ashoka.png" alt="Logo Ashoka">
+                  <span>Ashoka Fellow</span>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
       </div>
@@ -142,29 +271,120 @@
     <section id="produits" class="section">
       <div class="container">
         <div class="section__head">
-          <h2>Les produits Kukigo</h2>
-          <p class="muted">Gammes : à base de banane, patate et autres.</p>
+          <div>
+            <h2>Les produits Kukigo</h2>
+            <p class="muted">
+              Produits naturels à base de banane, patate et autres plantes locales.
+            </p>
+          </div>
         </div>
 
-        <h3 class="group-title">À base de banane</h3>
-        <div class="grid">
-          <article class="product"><h4>Farine de banane</h4><p>Usage : cuisine / pâtisserie / bouillies (selon habitudes).</p></article>
-          <article class="product"><h4>Savon de banane</h4><p>Savon artisanal pour l’hygiène du quotidien.</p></article>
-          <article class="product"><h4>Arraw de banane</h4><p>Produit traditionnel — description à compléter selon votre recette.</p></article>
-          <article class="product"><h4>Couscous de banane</h4><p>Alternative naturelle — description à compléter.</p></article>
-          <article class="product"><h4>Thiakri de banane</h4><p>Préparation traditionnelle — description à compléter.</p></article>
-          <article class="product"><h4>Sankhal de banane</h4><p>Préparation traditionnelle — description à compléter.</p></article>
-          <article class="product"><h4>Chips de banane</h4><p>Préparation traditionnelle — description à compléter.</p></article>
-          <article class="product"><h4>Poudre de peau de banane</h4><p>Usage à préciser (ex : mélange, recette, etc.).</p></article>
+        <div class="products-group">
+          <div class="products-group__head">
+            <h3 class="section-subtitle">Produits à base de banane</h3>
+            <p class="muted">
+              Une gamme naturelle pour l’alimentation, les préparations traditionnelles
+              et l’hygiène du quotidien.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/farine-banane.png" alt="Farine de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Farine de banane</h4>
+              <p>Idéale pour la cuisine, la pâtisserie et les bouillies.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/savon-banane.png" alt="Savon de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Savon de banane</h4>
+              <p>Savon artisanal naturel pour l’hygiène du quotidien.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/arraw-banane.png" alt="Arraw de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Arraw de banane</h4>
+              <p>Préparation traditionnelle issue de la transformation de la banane.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/couscous-banane.png" alt="Couscous de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Couscous de banane</h4>
+              <p>Alternative naturelle aux couscous traditionnels.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/thiakri-banane.png" alt="Thiakri de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Thiakri de banane</h4>
+              <p>Préparation traditionnelle naturelle.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/sankhal-banane.png" alt="Sankhal de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Sankhal de banane</h4>
+              <p>Préparation traditionnelle issue de la banane.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/chips-banane.png" alt="Chips de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Chips de banane</h4>
+              <p>Snack naturel et croustillant.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/poudre-banane.png" alt="Poudre de peau de banane Kukigo" loading="lazy" />
+              </figure>
+              <h4>Poudre de peau de banane</h4>
+              <p>Utilisation possible pour diverses préparations.</p>
+            </article>
+          </div>
         </div>
 
-        <h3 class="group-title">À base de patate</h3>
-        <div class="grid">
-          <article class="product"><h4>Farine de patate</h4><p>Usage : cuisine / pâtisserie / bouillies (selon recettes).</p></article>
-          <article class="product"><h4>Thiakri de patate</h4><p>Préparation traditionnelle — description à compléter.</p></article>
+        <div class="products-group products-group--spaced">
+          <div class="products-group__head">
+            <h3 class="section-subtitle">Produits à base de patate</h3>
+            <p class="muted">
+              Des produits simples, naturels et adaptés aux préparations du quotidien.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/farine-patate.png" alt="Farine de patate Kukigo" loading="lazy" />
+              </figure>
+              <h4>Farine de patate</h4>
+              <p>Adaptée à la cuisine et à la pâtisserie.</p>
+            </article>
+
+            <article class="product-card">
+              <figure class="product-card__media">
+                <img src="images/thiakri-patate.png" alt="Thiakri de patate Kukigo" loading="lazy" />
+              </figure>
+              <h4>Thiakri de patate</h4>
+              <p>Préparation traditionnelle à base de patate.</p>
+            </article>
+          </div>
         </div>
 
-        <p class="disclaimer">⚠️ Remarque : Produits naturels "sans gluten" pour l'alimentation et l'hygiène.</p>
+        <p class="disclaimer">
+          Remarque : Tous les produits alimentaires de Kukigo sont <strong>sans gluten</strong>.
+        </p>
       </div>
     </section>
 
@@ -172,160 +392,129 @@
     <section id="photos" class="section section--alt">
       <div class="container">
         <div class="section__head">
-          <h2>Photos</h2>
+          <div>
+            <h2>Photos</h2>
+            <p class="muted">Un aperçu des produits, de l’atelier et de l’univers Kukigo.</p>
+          </div>
         </div>
 
         <div class="gallery">
-          <img src="images/produit1.png" alt="Produit Kukigo">
-          <img src="images/produit2.png" alt="Produits Kukigo">
-          <img src="images/atelier1.png" alt="Atelier Kukigo">
-          <img src="images/atelier2.png" alt="Atelier Kukigo">
-          <img src="images/plantation1.png" alt="Plantation">
-          <img src="images/marguerite1.png" alt="Marguerite THIAW">
+          <img src="images/produit1.png" alt="Produit Kukigo" loading="lazy" />
+          <img src="images/produit2.png" alt="Produits Kukigo" loading="lazy" />
+          <img src="images/atelier1.png" alt="Atelier Kukigo" loading="lazy" />
+          <img src="images/atelier2.png" alt="Atelier Kukigo" loading="lazy" />
+          <img src="images/plantation1.png" alt="Plantation" loading="lazy" />
+          <img src="images/marguerite1.png" alt="Marguerite" loading="lazy" />
         </div>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
     <section id="contact" class="section">
-      <div class="container contact">
-
-        <!-- Texte + actions -->
-        <div>
+      <div class="container contact contact--full">
+        <div class="contact__content">
           <h2>Contact & commandes</h2>
-          <p>Pour commander au Sénégal ou poser une question, contacte Kukigo par téléphone ou WhatsApp.</p>
+
+          <p>
+            Pour commander au Sénégal ou obtenir des informations, contactez Kukigo
+            par téléphone ou WhatsApp.
+          </p>
 
           <div class="contact__actions">
-
-            <!-- ================= TELEPHONE ================= -->
-            <div class="contact-group">
+            <div class="contact-card">
               <h3>📞 Téléphone</h3>
 
-              <a class="btn btn--primary"
-                href="tel:+221783343578">
+              <a class="btn btn--primary" href="tel:+221783343578">
                 Kukigo 1 : +221 78 334 35 78
               </a>
 
-              <a class="btn btn--primary"
-                href="tel:+221772625329">
+              <a class="btn btn--primary" href="tel:+221772625329">
                 Kukigo 2 : +221 77 262 53 29
               </a>
 
-              <a class="btn btn--primary"
-                href="tel:+221782346098">
+              <a class="btn btn--primary" href="tel:+221782346098">
                 Kukigo 3 : +221 78 234 60 98
               </a>
             </div>
 
-            <!-- ================= WHATSAPP ================= -->
-            <div class="contact-group">
+            <div class="contact-card">
               <h3>💬 WhatsApp</h3>
 
-              <a class="btn btn--ghost"
-                href="https://wa.me/221783343578"
-                target="_blank" rel="noopener">
+              <a class="btn btn--ghost" href="https://wa.me/221783343578" target="_blank" rel="noopener">
                 Kukigo 1 : +221 78 334 35 78
               </a>
 
-              <a class="btn btn--ghost"
-                href="https://wa.me/221773744021"
-                target="_blank" rel="noopener">
+              <a class="btn btn--ghost" href="https://wa.me/221773744021" target="_blank" rel="noopener">
                 Kukigo 2 : +221 77 374 40 21
               </a>
-
             </div>
-
           </div>
 
-          <div class="small-card">
+          <div class="info-card">
             <h3>Infos utiles</h3>
             <ul class="bullets">
-              <li><strong>Pays de vente</strong> : Sénégal</li>
-              <li><strong>Produits alimentaires</strong> : sans gluten</li>
-              <li><strong>Points de vente</strong> : y compris pharmacies</li>
+              <li><strong>Pays de vente :</strong> Sénégal</li>
+              <li><strong>Produits alimentaires :</strong> sans gluten</li>
+              <li><strong>Points de vente :</strong> vente directe et partenaires</li>
             </ul>
           </div>
         </div>
-
-        <!-- Image contact -->
-        <div class="contact__side">
-          <figure class="media media--contact">
-            <img src="images/Contacts.png" alt="Contact Kukigo" loading="lazy">
-          </figure>
-        </div>
-
       </div>
     </section>
-
   </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container footer__inner">
       <p>© <span id="year"></span> Kukigo — Tous droits réservés.</p>
-      <p class="muted">Site vitrine (HTML/CSS). Boutique e-commerce : bientôt.</p>
+      <p class="muted">Site vitrine Kukigo</p>
     </div>
   </footer>
 
-  <!-- ============ JS (année automatique) ============ -->
-  <!-- <script>
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">×</button>
+    <img src="" alt="" class="lightbox__img" id="lightboxImg" />
+  </div>
+
+  <!-- ============ JS ============ -->
+  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-  </script> -->
 
-  <!-- =======================================
-     LIGHTBOX (agrandissement des images)
-    ======================================== -->
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">×</button>
-      <img src="" alt="" class="lightbox__img" id="lightboxImg">
-    </div>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const closeBtn = document.getElementById("lightboxClose");
+    const images = document.querySelectorAll(
+      ".gallery img, .media img, .product-card__media img"
+    );
 
-    <script>
-  // Année automatique
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  // ===============================
-  // LIGHTBOX
-  // ===============================
-
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightboxImg");
-  const closeBtn = document.getElementById("lightboxClose");
-
-  // Sélectionne toutes les images cliquables
-  const images = document.querySelectorAll(".gallery img, .media img");
-
-  images.forEach(img => {
-    img.addEventListener("click", () => {
-      lightbox.classList.add("active");
-      lightboxImg.src = img.src;
-      lightboxImg.alt = img.alt;
-      lightbox.setAttribute("aria-hidden", "false");
+    images.forEach((img) => {
+      img.addEventListener("click", () => {
+        lightbox.classList.add("active");
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.setAttribute("aria-hidden", "false");
+      });
     });
-  });
 
-  // Fermer en cliquant sur X
-  closeBtn.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-    lightbox.setAttribute("aria-hidden", "true");
-  });
-
-  // Fermer en cliquant en dehors de l'image
-  lightbox.addEventListener("click", (e) => {
-    if(e.target === lightbox){
+    closeBtn.addEventListener("click", () => {
       lightbox.classList.remove("active");
       lightbox.setAttribute("aria-hidden", "true");
-    }
-  });
+    });
 
-  // Fermer avec la touche ESC
-  document.addEventListener("keydown", (e) => {
-    if(e.key === "Escape"){
-      lightbox.classList.remove("active");
-      lightbox.setAttribute("aria-hidden", "true");
-    }
-  });
-</script>
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+      }
+    });
 
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+      }
+    });
+  </script>
 </body>
 </html>
