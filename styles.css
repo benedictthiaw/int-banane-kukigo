@@ -357,6 +357,66 @@ img{
   font-style: italic;
   color: var(--text);
   box-shadow: var(--shadow-xs);
+<<<<<<< HEAD
+=======
+}
+
+/* =========================================================
+   9) RECONNAISSANCE / MEDIAS
+   ========================================================= */
+.recognition{
+  margin-top: 32px;
+  padding: 22px;
+  border-left: 4px solid var(--green-main);
+  background: rgba(50, 238, 122, 0.75);
+  border-radius: 14px;
+  box-shadow: var(--shadow-xs);
+}
+
+.recognition h4{
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: var(--green-dark);
+}
+
+.recognition p{
+  margin-bottom: 18px;
+  color: var(--text-soft);
+}
+
+.recognition__logos{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.recognition__item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #35e93e;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-xs);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.recognition__item:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.recognition__item img{
+  height: 26px;
+  width: auto;
+}
+
+.recognition__item span{
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--green-dark);
+>>>>>>> 6b049cdd4884559ae29bc3619d1da51af1745309
 }
 
 /* =========================================================
@@ -528,6 +588,18 @@ img{
 }
 
 .media--portrait{
+<<<<<<< HEAD
+=======
+  aspect-ratio: 3 / 4;
+  max-height: 520px;
+}
+
+.media--portrait img{
+  object-position: 80% center;
+}
+
+.media--contact{
+>>>>>>> 6b049cdd4884559ae29bc3619d1da51af1745309
   aspect-ratio: 4 / 5;
   max-height: 660px;
 }
