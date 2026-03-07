@@ -2,7 +2,7 @@
    1) THEME / VARIABLES
    ========================================================= */
 :root{
-    color-scheme: light;
+  --color-scheme: light;
   --white-main: #ffffff;
   --white-soft: #fcfdf9;
   --green-main: #3fa65c;
