@@ -248,32 +248,37 @@ img{
   font-size: clamp(32px, 4vw, 54px);
   line-height: 1.05;
   margin: 0 0 16px;
-  max-width: 12ch;
+  max-width: 15ch;
 }
 
 .accent{
-  color: var(--green-dark);
-  font-weight: 800;
+  color: #256c3b;
+  font-weight: 900;
 }
 
-@supports ((-webkit-background-clip: text) or (background-clip: text)){
-  .accent{
-    background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+/* Dégradé uniquement si l'écran est assez large et en mode clair */
+@media (min-width: 769px) and (prefers-color-scheme: light){
+  @supports ((-webkit-background-clip: text) or (background-clip: text)){
+    .accent{
+      background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
   }
 }
 
+/* Sécurité : en mode sombre, texte plein et lisible */
 @media (prefers-color-scheme: dark){
   .accent{
     background: none !important;
-    -webkit-background-clip: initial !important;
-    background-clip: initial !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
     -webkit-text-fill-color: #256c3b !important;
     color: #256c3b !important;
-    font-weight: 900;
+    font-weight: 900 !important;
+    text-shadow: none !important;
   }
 }
 
@@ -734,6 +739,17 @@ img{
 
   .media--portrait{
     max-height: 460px;
+  }
+}
+
+@media (max-width: 768px){
+  .accent{
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: #256c3b !important;
+    color: #256c3b !important;
+    font-weight: 900 !important;
   }
 }
 
