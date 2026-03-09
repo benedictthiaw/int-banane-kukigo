@@ -253,29 +253,36 @@ img{
 
 /* Effet robuste pour "par Kukigo" :
    texte lisible + surbrillance décorative derrière */
+/* Style principal avec surbrillance */
 .accent{
   color: #256c3b;
   font-weight: 900;
-  display: inline;
-  padding: 0 0.08em;
-  border-radius: 0.2em;
-  background-image: linear-gradient(135deg, rgba(63,166,92,0.18), rgba(242,201,76,0.32));
-  background-repeat: no-repeat;
-  background-size: 100% 0.42em;
-  background-position: 0 92%;
+  background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* En mode sombre, on garde le texte très lisible */
+/* Téléphones : texte lisible */
+@media (max-width: 768px){
+  .accent{
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
+    -webkit-text-fill-color: #256c3b !important;
+    color: #256c3b !important;
+    font-weight: 900;
+  }
+}
+
+/* Mode sombre : texte lisible */
 @media (prefers-color-scheme: dark){
   .accent{
-    color: #256c3b !important;
-    font-weight: 900 !important;
-    background-image: linear-gradient(135deg, rgba(63,166,92,0.10), rgba(242,201,76,0.18)) !important;
-    background-repeat: no-repeat !important;
-    background-size: 100% 0.38em !important;
-    background-position: 0 92% !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
     -webkit-text-fill-color: #256c3b !important;
-    text-shadow: none !important;
+    color: #256c3b !important;
   }
 }
 
