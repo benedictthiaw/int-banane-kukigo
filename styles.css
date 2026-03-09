@@ -876,6 +876,22 @@ img{
 /* =========================================================
    18) SECURITE FINALE POUR "par Kukigo" EN MODE SOMBRE
    ========================================================= */
+.accent{
+  color: #256c3b;
+  font-weight: 900;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)){
+  .accent{
+    background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+/* tout en bas du fichier */
 @media (prefers-color-scheme: dark){
   .hero h1 .accent,
   .accent{
