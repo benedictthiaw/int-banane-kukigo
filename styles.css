@@ -256,7 +256,6 @@ img{
   font-weight: 800;
 }
 
-/* Effet joli sur navigateurs compatibles */
 @supports ((-webkit-background-clip: text) or (background-clip: text)){
   .accent{
     background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
@@ -267,24 +266,14 @@ img{
   }
 }
 
-/* Si mode sombre activé : on retire le transparent pour garder le texte lisible */
 @media (prefers-color-scheme: dark){
   .accent{
     background: none !important;
     -webkit-background-clip: initial !important;
     background-clip: initial !important;
-    -webkit-text-fill-color: var(--green-dark) !important;
-    color: var(--green-dark) !important;
-    text-shadow: none !important;
-  }
-}
-
-/* Sécurité supplémentaire sur mobile */
-@media (max-width: 768px){
-  .accent{
-    background: none;
-    -webkit-text-fill-color: var(--green-dark);
-    color: var(--green-dark);
+    -webkit-text-fill-color: #256c3b !important;
+    color: #256c3b !important;
+    font-weight: 900;
   }
 }
 
