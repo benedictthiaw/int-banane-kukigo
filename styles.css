@@ -872,3 +872,20 @@ img{
     color: #ffffff !important;
   }
 }
+
+/* =========================================================
+   18) SECURITE FINALE POUR "par Kukigo" EN MODE SOMBRE
+   ========================================================= */
+@media (prefers-color-scheme: dark){
+  .hero h1 .accent,
+  .accent{
+    background: none !important;
+    background-image: none !important;
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: #256c3b !important;
+    color: #256c3b !important;
+    font-weight: 900 !important;
+    text-shadow: none !important;
+  }
+}
