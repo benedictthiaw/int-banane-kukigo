@@ -2,7 +2,8 @@
    1) THEME / VARIABLES
    ========================================================= */
 :root{
-  --color-scheme: light;
+  color-scheme: only light;
+   
   --white-main: #ffffff;
   --white-soft: #fcfdf9;
   --green-main: #3fa65c;
@@ -767,3 +768,34 @@ img{
     right: 18px;
   }
 }
+
+@media (prefers-color-scheme: dark){
+  html,
+  body{
+    background: #fcfdf9 !important;
+    color: #1f2a1f !important;
+  }
+
+  .section--alt{
+    background: linear-gradient(180deg, #f5fbf6, #edf8f0) !important;
+  }
+
+  .product-card,
+  .contact-card,
+  .info-card,
+  .recognition,
+  .media,
+  .recognition__item{
+    background: #ffffff !important;
+    color: #1f2a1f !important;
+  }
+
+  .muted,
+  .product-card p,
+  .recognition p,
+  .bullets,
+  .note{
+    color: #4d5b4f !important;
+  }
+}
+
