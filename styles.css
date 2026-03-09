@@ -251,33 +251,30 @@ img{
   max-width: 15ch;
 }
 
+/* Effet robuste pour "par Kukigo" :
+   texte lisible + surbrillance décorative derrière */
 .accent{
   color: #256c3b;
   font-weight: 900;
+  display: inline;
+  padding: 0 0.08em;
+  border-radius: 0.2em;
+  background-image: linear-gradient(135deg, rgba(63,166,92,0.18), rgba(242,201,76,0.32));
+  background-repeat: no-repeat;
+  background-size: 100% 0.42em;
+  background-position: 0 92%;
 }
 
-/* Dégradé uniquement si l'écran est assez large et en mode clair */
-@media (min-width: 769px) and (prefers-color-scheme: light){
-  @supports ((-webkit-background-clip: text) or (background-clip: text)){
-    .accent{
-      background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
-    }
-  }
-}
-
-/* Sécurité : en mode sombre, texte plein et lisible */
+/* En mode sombre, on garde le texte très lisible */
 @media (prefers-color-scheme: dark){
   .accent{
-    background: none !important;
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
-    -webkit-text-fill-color: #256c3b !important;
     color: #256c3b !important;
     font-weight: 900 !important;
+    background-image: linear-gradient(135deg, rgba(63,166,92,0.10), rgba(242,201,76,0.18)) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 0.38em !important;
+    background-position: 0 92% !important;
+    -webkit-text-fill-color: #256c3b !important;
     text-shadow: none !important;
   }
 }
@@ -742,33 +739,6 @@ img{
   }
 }
 
-.accent{
-  color: #256c3b;
-  font-weight: 900;
-}
-
-@supports ((-webkit-background-clip: text) or (background-clip: text)){
-  .accent{
-    background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-}
-
-@media (prefers-color-scheme: dark){
-  .accent{
-    background: none !important;
-    -webkit-background-clip: initial !important;
-    background-clip: initial !important;
-    -webkit-text-fill-color: #256c3b !important;
-    color: #256c3b !important;
-    font-weight: 900 !important;
-    text-shadow: none !important;
-  }
-}
-
 @media (max-width: 420px){
   .nav{
     display: none;
@@ -870,38 +840,5 @@ img{
   .brand__name,
   .nav a{
     color: #ffffff !important;
-  }
-}
-
-/* =========================================================
-   18) SECURITE FINALE POUR "par Kukigo" EN MODE SOMBRE
-   ========================================================= */
-.accent{
-  color: #256c3b;
-  font-weight: 900;
-}
-
-@supports ((-webkit-background-clip: text) or (background-clip: text)){
-  .accent{
-    background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-}
-
-/* tout en bas du fichier */
-@media (prefers-color-scheme: dark){
-  .hero h1 .accent,
-  .accent{
-    background: none !important;
-    background-image: none !important;
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
-    -webkit-text-fill-color: #256c3b !important;
-    color: #256c3b !important;
-    font-weight: 900 !important;
-    text-shadow: none !important;
   }
 }
