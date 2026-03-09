@@ -742,14 +742,30 @@ img{
   }
 }
 
-@media (max-width: 768px){
+.accent{
+  color: #256c3b;
+  font-weight: 900;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)){
+  .accent{
+    background: linear-gradient(135deg, var(--green-main), var(--yellow-main));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+@media (prefers-color-scheme: dark){
   .accent{
     background: none !important;
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
+    -webkit-background-clip: initial !important;
+    background-clip: initial !important;
     -webkit-text-fill-color: #256c3b !important;
     color: #256c3b !important;
     font-weight: 900 !important;
+    text-shadow: none !important;
   }
 }
 
